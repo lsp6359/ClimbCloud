@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         // 캐릭이 멈췄을 때 정지모션
         if (this.rigid2D.velocity.x == 0 && this.rigid2D.velocity.y == 0)
         {
-            // walk 애니메이션을 반복시 중간에 끊고 0프레임부터 다시 시작한다.
+            // Play("이름", 재생타입, 레이어)
             animator.Play("Walk", -1, 0);
         }
         //***************************************
